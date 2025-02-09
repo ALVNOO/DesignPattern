@@ -31,6 +31,7 @@ Berikut adalah penjelasan setiap komponennya:
 
 ## Class Diagram
 ![class prototype](https://github.com/user-attachments/assets/0cbee59b-3e88-4840-824d-612b17f67e8a)
+
 Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digunakan untuk mengelola berbagai jenis publikasi seperti Buku, Majalah, dan Koran.
 
 
@@ -75,6 +76,7 @@ Keluar
 
 ## Design Pattern Composite
 ![composite](https://github.com/user-attachments/assets/3c51beac-adce-4cbd-983a-0e3fd227ea78)
+
 Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasikan struktur hierarki (seperti pohon) dengan objek individual (Leaf) dan objek yang dapat memiliki anak (Composite).
 
 ### Component (Antarmuka/Kelas Abstrak)
@@ -98,6 +100,7 @@ Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasik
 
 ## Class Diagram
 ![class composite](https://github.com/user-attachments/assets/45de93d4-e807-4a77-8897-b6130f00e505)
+
 Composite Design Pattern, yang digunakan untuk menangani struktur hierarki dengan komponen yang dapat berupa individu (leaf) atau kumpulan objek (composite).
 
 dengan menggunakan design pattern Composite
@@ -142,6 +145,7 @@ Keluar dari Program
 
 ## Design Pattern Chain of Responsibility
 ![Chain](https://github.com/user-attachments/assets/586f93fe-8b57-418e-be37-18db684f5e87)
+
 Chain of Responsibility Design Pattern, yaitu pola desain yang memungkinkan serangkaian objek (handlers) untuk menangani permintaan secara berantai sampai salah satu objek menangani permintaan tersebut.
 
 ### Handler (Interface/Kelas Abstrak)
