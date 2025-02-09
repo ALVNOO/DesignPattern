@@ -42,6 +42,34 @@ Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digun
 - Keluar Program : Admin dapat keluar dari sistem atau mengakhiri program.
 
 
+## Sequence Diagram
+![seq prototype](https://github.com/user-attachments/assets/505d4b40-17fb-4e60-8ba7-b2866df7f807)
+
+Tambah Prototype
+- Admin memilih "Tambah Properti"
+- TokoManager memanggil register_prototype() pada PrototypeRegistry
+- PrototypeRegistry menyimpan prototype ke dalam dictionary untuk referensi di masa depan.
+
+Tambah Item dari Prototype
+- Admin memilih "Tambah Item dari Prototype"
+- TokoManager memanggil clone_prototype() pada PrototypeRegistry
+- PrototypeRegistry membuat salinan (clone) dari prototype yang tersimpan
+- Sistem membuat instance baru dari hasil clone
+
+Hapus Item 
+- Admin memilih "Hapus Item"
+- TokoManager memanggil delete_item()
+- Item yang dipilih dihapus dari daftar
+
+Lihat Semua Item
+- Admin memilih "Lihat Semua Item"
+- TokoManager memanggil display_all_items()
+- Setiap item memanggil metode display_info()
+- Informasi item ditampilkan ke pengguna
+
+Keluar
+- Admin memilih "Keluar"
+- Sistem menutup program
 
 ---
 
@@ -81,7 +109,34 @@ dengan menggunakan design pattern Composite
 ## Use Case Diagram
 ![usecase compo dan chain](https://github.com/user-attachments/assets/45d7c7c6-1250-4dd0-b27f-ee26d6d13cd1)
 
+Use case diagram di atas menggambarkan interaksi antara aktor Admin dengan sistem yang memiliki empat fungsi utama, yaitu:
 
+Tambah Item : Admin dapat menambahkan item baru ke dalam sistem.
+Delete Item : Admin memiliki akses untuk menghapus item yang sudah ada dalam sistem.
+Display Item : Admin dapat menampilkan daftar item yang tersedia di dalam sistem.
+Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplikasi.
+
+
+## Sequence Diagram
+![seq composite](https://github.com/user-attachments/assets/0f04c300-7874-4230-a08b-074ebb29f1ea)
+
+Menambahkan Properti (Item) ke dalam Toko
+- Admin memilih "Tambah Properti"
+- Toko memanggil add_item(), yang menambahkan item baru ke dalam daftar.
+- Instance baru dari Buku/Majalah/Koran dibuat dan disimpan.
+
+Menampilkan Semua Item
+- Admin memilih "Lihat Semua Item"
+- Toko memanggil display_info() pada setiap item dalam daftar
+- Setiap item menjalankan display_info() untuk menampilkan informasi
+
+Menghapus Item
+- Admin memilih "Hapus Item"
+- Toko memanggil remove_item(), yang menghapus item dari koleksi.
+
+Keluar dari Program
+- Admin memilih "Keluar"
+- Sistem menutup program
 
 ---
 
@@ -120,4 +175,39 @@ dengan menggunakan design pattern Chain of Responsibility
 
 ## Use Case Diagram
 ![usecase compo dan chain](https://github.com/user-attachments/assets/bb530b11-dcb7-45e2-bdcc-6dfea4011024)
+
+Use case diagram di atas menggambarkan interaksi antara aktor Admin dengan sistem yang memiliki empat fungsi utama, yaitu:
+
+Tambah Item : Admin dapat menambahkan item baru ke dalam sistem.
+Delete Item : Admin memiliki akses untuk menghapus item yang sudah ada dalam sistem.
+Display Item : Admin dapat menampilkan daftar item yang tersedia di dalam sistem.
+Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplikasi.
+
+
+## Sequence Diagram
+![seq chain](https://github.com/user-attachments/assets/e4e82744-ad88-4bc9-bd87-c308cb2fbcfa)
+
+Menambahkan Properti (Item) ke dalam Toko
+- Admin memilih "Tambah Properti"
+- TokoManager memanggil handle_request() pada Handler Chain
+- Handler Chain mengecek urutan handler:
+   - Cek handler Buku
+   - Cek handler Majalah
+   - Cek handler Koran
+Jika ditemukan handler yang sesuai, instance item dibuat
+
+Menampilkan Semua Item
+- Admin memilih "Lihat Semua Item"
+- TokoManager memanggil display_all_items()
+- Setiap item dalam daftar menjalankan display_info()
+- Informasi item ditampilkan ke Admin
+
+Menghapus Item
+- Admin memilih "Hapus Item"
+- TokoManager memanggil delete_item()
+- Item yang sesuai dihapus dari daftar toko
+
+Keluar dari Program
+- Admin memilih "Keluar"
+- Sistem menutup program
 
