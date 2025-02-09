@@ -227,3 +227,5 @@ Keluar dari Program
 - Admin memilih "Keluar"
 - Sistem menutup program
 
+## CLI
+![ss chain](https://github.com/user-attachments/assets/37b92b31-f76f-4b94-9047-f0dcfb8b380a)
