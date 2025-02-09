@@ -72,6 +72,12 @@ Keluar
 - Admin memilih "Keluar"
 - Sistem menutup program
 
+## CLI
+![Screenshot 2025-02-09 162942](https://github.com/user-attachments/assets/d7d876e3-0a5b-4502-b164-c98f62d8f56d)
+![Screenshot 2025-02-09 162942](https://github.com/user-attachments/assets/516574b2-e6e6-4ab8-8f65-387b6be9d9ad)
+
+
+
 ---
 
 ## Design Pattern Composite
