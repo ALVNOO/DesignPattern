@@ -146,6 +146,13 @@ Keluar dari Program
 - Admin memilih "Keluar"
 - Sistem menutup program
 
+
+## CLI
+![ss compo](https://github.com/user-attachments/assets/3f55b11e-25f6-4387-b91a-e70d75e132d0)
+![ss compo 2](https://github.com/user-attachments/assets/a76cce70-c368-40e4-8b2d-38f0daf02290)
+![ss compo 3](https://github.com/user-attachments/assets/c072f5bd-a9c8-4c6e-884e-1ff89599c259)
+
+
 ---
 
 ## Design Pattern Chain of Responsibility
