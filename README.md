@@ -73,9 +73,8 @@ Keluar
 - Sistem menutup program
 
 ## CLI
-![Screenshot 2025-02-09 162942](https://github.com/user-attachments/assets/d7d876e3-0a5b-4502-b164-c98f62d8f56d)
-![Screenshot 2025-02-09 162942](https://github.com/user-attachments/assets/516574b2-e6e6-4ab8-8f65-387b6be9d9ad)
-
+![Screenshot 2025-02-09 163122](https://github.com/user-attachments/assets/ed1af43b-a39c-4c4b-b3cf-49d4db090836)
+![Screenshot 2025-02-09 163140](https://github.com/user-attachments/assets/38d73b4d-cb12-4c41-b85c-5a5da874c206)
 
 
 ---
