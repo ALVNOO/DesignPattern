@@ -83,7 +83,7 @@ Keluar
 ---
 
 ## Design Pattern Composite
-![composite](https://github.com/user-attachments/assets/3c51beac-adce-4cbd-983a-0e3fd227ea78)
+![composite](https://github.com/user-attachments/assets/c131dcd0-d669-4f33-abda-db3a88842135)
 
 Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasikan struktur hierarki (seperti pohon) dengan objek individual (Leaf) dan objek yang dapat memiliki anak (Composite).
 
