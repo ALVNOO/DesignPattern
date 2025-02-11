@@ -118,7 +118,7 @@ dengan menggunakan design pattern Composite
 
 
 ## Use Case Diagram
-![usecase compo dan chain](https://github.com/user-attachments/assets/45d7c7c6-1250-4dd0-b27f-ee26d6d13cd1)
+![usecase compo dan chain](https://github.com/user-attachments/assets/2f9fe8c2-1d8d-4168-a3ea-b9bdcb7ec04a)
 
 Use case diagram di atas menggambarkan interaksi antara aktor Admin dengan sistem yang memiliki empat fungsi utama, yaitu:
 
