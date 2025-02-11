@@ -37,7 +37,8 @@ Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digun
 
 
 ## Use Case Diagram
-![usecase prototype](https://github.com/user-attachments/assets/2faf80fa-a569-49a0-88b6-5cbb88143b01)
+![usecase prototype](https://github.com/user-attachments/assets/eb1ca001-0177-45b3-86af-f701588586b8)
+
 - Tambah Prototype : Admin dapat menambahkan prototype baru ke dalam sistem.
 - Tambah Item dari Prototype : Admin dapat membuat item baru berdasarkan prototype yang sudah ada.
 - Hapus Item : Admin dapat menghapus item tertentu dari sistem.
