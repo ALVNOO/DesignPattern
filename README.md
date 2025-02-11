@@ -46,7 +46,8 @@ Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digun
 
 
 ## Sequence Diagram
-![seq prototype](https://github.com/user-attachments/assets/505d4b40-17fb-4e60-8ba7-b2866df7f807)
+![sequence prototype drawio (1)](https://github.com/user-attachments/assets/db70bd06-56a3-40f9-9d56-c3e492eda3c9)
+
 
 Tambah Prototype
 - Admin memilih "Tambah Properti"
