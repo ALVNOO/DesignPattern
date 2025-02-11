@@ -9,7 +9,7 @@ excalidraw : https://excalidraw.com/#json=w2dgND2NpXfsuCXcSDvvx,Fhg9vS5UayWRtYhJ
 ---
 
 ## Design Pattern Prototype
-![prototype](https://github.com/user-attachments/assets/393578d6-e2c9-4ea9-8b04-576b0c36dfef)
+![class prototype - Copy](https://github.com/user-attachments/assets/57b93c59-0ec4-4704-a817-aa7698e5b60b)
 
 Prototype Design Pattern yaitu pola desain yang digunakan untuk membuat objek baru dengan menyalin objek yang sudah ada (cloning), daripada membuatnya dari awal. 
 Berikut adalah penjelasan setiap komponennya:
