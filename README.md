@@ -107,7 +107,7 @@ Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasik
 
 
 ## Class Diagram
-![class composite](https://github.com/user-attachments/assets/45de93d4-e807-4a77-8897-b6130f00e505)
+![class composite](https://github.com/user-attachments/assets/7c29b465-fb4a-4185-9f13-61ddc8ba1d4e)
 
 Composite Design Pattern, yang digunakan untuk menangani struktur hierarki dengan komponen yang dapat berupa individu (leaf) atau kumpulan objek (composite).
 
