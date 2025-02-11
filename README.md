@@ -30,7 +30,7 @@ Berikut adalah penjelasan setiap komponennya:
 
 
 ## Class Diagram
-![class prototype](https://github.com/user-attachments/assets/674a8cd6-ff3e-44b2-ad95-95bf256a31bd)
+![class prototype drawio](https://github.com/user-attachments/assets/7aff2bfc-2538-44bd-a3df-9091f5f3121d)
 
 
 Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digunakan untuk mengelola berbagai jenis publikasi seperti Buku, Majalah, dan Koran.
