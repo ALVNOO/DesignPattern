@@ -129,7 +129,7 @@ Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplik
 
 
 ## Sequence Diagram
-![seq composite](https://github.com/user-attachments/assets/0f04c300-7874-4230-a08b-074ebb29f1ea)
+![sequence composite drawio](https://github.com/user-attachments/assets/59e4686d-0975-417c-babc-e282f9b25b96)
 
 Menambahkan Properti (Item) ke dalam Toko
 - Admin memilih "Tambah Properti"
