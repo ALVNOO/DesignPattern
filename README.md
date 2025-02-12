@@ -193,7 +193,8 @@ dengan menggunakan design pattern Chain of Responsibility
 
 
 ## Use Case Diagram
-![usecase compo dan chain](https://github.com/user-attachments/assets/bb530b11-dcb7-45e2-bdcc-6dfea4011024)
+![usecase compo dan chain](https://github.com/user-attachments/assets/e0b6f62a-889e-488e-975d-6bbc416d6efb)
+
 
 Use case diagram di atas menggambarkan interaksi antara aktor Admin dengan sistem yang memiliki empat fungsi utama, yaitu:
 
