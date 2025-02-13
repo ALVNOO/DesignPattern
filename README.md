@@ -32,8 +32,12 @@ Berikut adalah penjelasan setiap komponennya:
 ## Class Diagram
 ![class prototype drawio (1)](https://github.com/user-attachments/assets/d71f8d72-542e-4acd-a064-4e310e77534d)
 
-
-Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digunakan untuk mengelola berbagai jenis publikasi seperti Buku, Majalah, dan Koran.
+Etalase → Kelas yang berfungsi sebagai penyimpanan daftar publikasi (items). Juga memiliki registry (prototype_registry) untuk menyimpan prototipe publikasi yang dapat digunakan untuk cloning.
+PublicationPrototype → Kelas abstrak yang mendefinisikan metode clone() untuk menduplikasi objek dan show_details() untuk menampilkan detail publikasi.
+Buku, Majalah, Koran → Subclass dari PublicationPrototype dengan atribut khusus masing-masing:
+  - Buku → Memiliki atribut title, author, dan price.
+  - Majalah → Memiliki atribut title, edition, dan price.
+  - Koran → Memiliki atribut title, publisher, dan price.
 
 
 ## Use Case Diagram
