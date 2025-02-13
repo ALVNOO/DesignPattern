@@ -52,31 +52,37 @@ Buku, Majalah, Koran → Subclass dari PublicationPrototype dengan atribut khusu
 ![sequence prototype drawio (3)](https://github.com/user-attachments/assets/bb3be075-2066-4682-987a-89ac3f71cf59)
 
 
-Tambah Prototype
-- Admin memilih "Tambah Properti"
-- TokoManager memanggil register_prototype() pada PrototypeRegistry
-- PrototypeRegistry menyimpan prototype ke dalam dictionary untuk referensi di masa depan.
+Menambahkan Produk
+Alur:
 
-Tambah Item dari Prototype
-- Admin memilih "Tambah Item dari Prototype"
-- TokoManager memanggil clone_prototype() pada PrototypeRegistry
-- PrototypeRegistry membuat salinan (clone) dari prototype yang tersimpan
-- Sistem membuat instance baru dari hasil clone
+- User memilih tambah produk → Pengguna memulai proses untuk menambahkan produk baru.
+- Pilih jenis produk (Buku/Majalah/Koran) → Pengguna memilih jenis produk yang ingin ditambahkan.
+- User memilih kategori produk → Pengguna memilih kategori tempat produk akan disimpan.
+- Meminta prototype dari registry → Sistem meminta prototipe produk dari Prototype Registry.
+- Clone objek → PublicationPrototype membuat salinan (cloning) objek berdasarkan prototipe.
+- Mengembalikan hasil cloning → Hasil cloning dikembalikan ke Prototype Registry.
+- Mengembalikan objek hasil cloning → Prototype Registry mengembalikan objek hasil cloning ke Etalase.
+- Menambahkan objek ke daftar produk → Objek hasil cloning ditambahkan ke daftar produk dalam etalase.
+- Menampilkan pesan berhasil ditambahkan → Sistem mengonfirmasi bahwa produk telah berhasil ditambahkan.
 
-Hapus Item 
-- Admin memilih "Hapus Item"
-- TokoManager memanggil delete_item()
-- Item yang dipilih dihapus dari daftar
+Menghapus Produk
+Alur:
 
-Lihat Semua Item
-- Admin memilih "Lihat Semua Item"
-- TokoManager memanggil display_all_items()
-- Setiap item memanggil metode display_info()
-- Informasi item ditampilkan ke pengguna
+- User memilih hapus produk → Pengguna memulai proses penghapusan produk.
+- Meminta kategori dan indeks produk → Sistem meminta pengguna untuk memasukkan kategori dan indeks produk yang ingin dihapus.
+- Masukkan kategori dan indeks produk → Pengguna menginput kategori dan indeks produk.
+- Cek apakah indeks dan kategori valid → Sistem memeriksa apakah data yang dimasukkan benar dan produk tersedia.
+- Hapus produk → Jika valid, produk dihapus dari daftar etalase.
+- Konfirmasi produk berhasil dihapus → Sistem memberikan notifikasi bahwa produk telah berhasil dihapus.
 
-Keluar
-- Admin memilih "Keluar"
-- Sistem menutup program
+Menampilkan Semua Produk
+Alur:
+
+- User memilih lihat semua produk → Pengguna meminta daftar produk yang tersedia.
+- Ambil daftar produk berdasarkan kategori → Sistem mengambil daftar produk berdasarkan kategori yang tersedia.
+- Meminta menampilkan detailnya → Sistem meminta detail produk untuk ditampilkan.
+- Mengembalikan detail → Sistem mengembalikan informasi detail dari produk.
+- Menampilkan daftar produk ke User → Produk yang tersedia ditampilkan kepada pengguna.
 
 ## CLI
 ![Screenshot 2025-02-09 163122](https://github.com/user-attachments/assets/ed1af43b-a39c-4c4b-b3cf-49d4db090836)
