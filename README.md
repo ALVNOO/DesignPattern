@@ -46,7 +46,7 @@ Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digun
 
 
 ## Sequence Diagram
-![Sequence Prototype drawio (3)](https://github.com/user-attachments/assets/485bde76-ae2d-4c59-95f9-d7c1d2102644)
+![sequence prototype drawio (3)](https://github.com/user-attachments/assets/bb3be075-2066-4682-987a-89ac3f71cf59)
 
 
 Tambah Prototype
@@ -129,7 +129,7 @@ Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplik
 
 
 ## Sequence Diagram
-![Sequence Composite drawio (1)](https://github.com/user-attachments/assets/ed8be275-8976-4617-9845-5d761ee0e013)
+![sequence composite drawio (1)](https://github.com/user-attachments/assets/2cac363e-fc6f-4039-b270-330b0b38603a)
 
 Menambahkan Properti (Item) ke dalam Toko
 - Admin memilih "Tambah Properti"
@@ -206,7 +206,7 @@ Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplik
 
 
 ## Sequence Diagram
-![Sequence Chain drawio](https://github.com/user-attachments/assets/cdd2eec2-ddce-41e0-ada1-a9452f595d4d)
+![sequence chain drawio](https://github.com/user-attachments/assets/0a1d703e-2c9a-4348-9f5b-e856834f5310)
 
 Menambahkan Properti (Item) ke dalam Toko
 - Admin memilih "Tambah Properti"
