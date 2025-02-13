@@ -1,4 +1,4 @@
-![class diagram chain drawio](https://github.com/user-attachments/assets/27a30d51-6e78-4179-9a52-40859ae35fae)# DesignPattern
+# DesignPattern
 ---
 
 ## 📄 Laporan 
