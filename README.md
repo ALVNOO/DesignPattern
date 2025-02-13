@@ -85,8 +85,10 @@ Alur:
 - Menampilkan daftar produk ke User → Produk yang tersedia ditampilkan kepada pengguna.
 
 ## CLI
-![Screenshot 2025-02-09 163122](https://github.com/user-attachments/assets/ed1af43b-a39c-4c4b-b3cf-49d4db090836)
-![Screenshot 2025-02-09 163140](https://github.com/user-attachments/assets/38d73b4d-cb12-4c41-b85c-5a5da874c206)
+![SS PROTOTYPE 1](https://github.com/user-attachments/assets/f07632c3-b641-4319-a10b-66e7045aab1a)
+![SS PROTOTYPE 2](https://github.com/user-attachments/assets/b0e23172-afd3-4281-aec6-dd3ce1d941ba)
+![SS PROTOTYPE 3](https://github.com/user-attachments/assets/38c5f32b-362a-4634-a626-ecf396a80791)
+![SS PROTOTYPE 4](https://github.com/user-attachments/assets/42252708-15db-464f-a06f-96bd6134033c)
 
 
 ---
