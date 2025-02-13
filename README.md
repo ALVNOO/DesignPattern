@@ -115,10 +115,11 @@ Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasik
 
 Composite Design Pattern, yang digunakan untuk menangani struktur hierarki dengan komponen yang dapat berupa individu (leaf) atau kumpulan objek (composite).
 
-dengan menggunakan design pattern Composite
-- Memanfaatkan Composite Design Pattern dengan baik untuk menangani struktur hierarki.
-- Memudahkan manipulasi item secara seragam dengan menggunakan interface Item.
-- Fleksibel dan dapat diperluas, cukup dengan menambahkan subclass baru yang mengimplementasikan Item.
+Etalase → Kelas utama yang merepresentasikan etalase toko yang berisi kategori produk 
+Category = Composite → Kelas yang merepresentasikan kategori dalam etalase dan dapat menyimpan daftar item
+Item = Component → Interface yang mendefinisikan metode show_details() untuk menampilkan detail produk atau kategori
+Product = Leaf → Kelas dasar untuk produk yang mengimplementasikan Item
+Buku, Majalah, Koran → Subclass dari Product dengan atribut spesifik masing-masing
 
 
 ## Use Case Diagram
@@ -190,11 +191,13 @@ Chain of Responsibility Design Pattern, yaitu pola desain yang memungkinkan sera
 
 implementasi Chain of Responsibility Design Pattern, yang digunakan untuk menangani permintaan secara berantai sampai salah satu handler menanganinya.
 
+Handler → Interface yang menjadi dasar bagi semua handler dalam rantai
+BukuHandler = ConcreteHandler → Handler yang menangani permintaan terkait buku
+MajalahHandler = ConcreteHandler → Handler yang menangani permintaan terkait majalah
+KoranHandler = ConcreteHandler → Handler yang menangani permintaan terkait koran
+Etalase → Kelas utama yang menyimpan daftar karya tulis dan menangani permintaan
+KaryaTulis → Kelas yang merepresentasikan objek karya tulis
 
-dengan menggunakan design pattern Chain of Responsibility
-- Menangani permintaan secara fleksibel.
-- Memisahkan logika penanganan item dari TokoManager, sehingga mudah diperluas.
-- Fleksibel—bisa menambah handler baru tanpa mengubah kode yang sudah ada.
 
 
 ## Use Case Diagram
