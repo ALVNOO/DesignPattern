@@ -159,7 +159,7 @@ Keluar dari Program
 ---
 
 ## Design Pattern Chain of Responsibility
-![Chain](https://github.com/user-attachments/assets/586f93fe-8b57-418e-be37-18db684f5e87)
+![Chain](https://github.com/user-attachments/assets/1a2c710b-a933-4878-9ace-74a935036fd8)
 
 Chain of Responsibility Design Pattern, yaitu pola desain yang memungkinkan serangkaian objek (handlers) untuk menangani permintaan secara berantai sampai salah satu objek menangani permintaan tersebut.
 
