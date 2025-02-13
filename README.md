@@ -30,7 +30,7 @@ Berikut adalah penjelasan setiap komponennya:
 
 
 ## Class Diagram
-![class prototype drawio](https://github.com/user-attachments/assets/7aff2bfc-2538-44bd-a3df-9091f5f3121d)
+![class prototype drawio (1)](https://github.com/user-attachments/assets/d71f8d72-542e-4acd-a064-4e310e77534d)
 
 
 Class diagram ini menggambarkan implementasi Prototype Design Pattern yang digunakan untuk mengelola berbagai jenis publikasi seperti Buku, Majalah, dan Koran.
@@ -107,7 +107,7 @@ Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasik
 
 
 ## Class Diagram
-![class composite](https://github.com/user-attachments/assets/d62098cb-896e-4f22-8d70-856eb8f0ffcd)
+![class composite drawio](https://github.com/user-attachments/assets/b808ab04-3a09-4354-8e6d-290c8d383b1e)
 
 Composite Design Pattern, yang digunakan untuk menangani struktur hierarki dengan komponen yang dapat berupa individu (leaf) atau kumpulan objek (composite).
 
@@ -182,7 +182,8 @@ Chain of Responsibility Design Pattern, yaitu pola desain yang memungkinkan sera
 
 
 ## Class Diagram
-![class chain](https://github.com/user-attachments/assets/0732db54-3eba-4e6b-a826-a1c8f97674e2)
+![class chain drawio](https://github.com/user-attachments/assets/fbb74316-6cfa-4d21-9097-a6cea192a1fd)
+
 implementasi Chain of Responsibility Design Pattern, yang digunakan untuk menangani permintaan secara berantai sampai salah satu handler menanganinya.
 
 
