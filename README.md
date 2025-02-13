@@ -174,9 +174,10 @@ Hapus Produk
 
 
 ## CLI
-![ss compo](https://github.com/user-attachments/assets/3f55b11e-25f6-4387-b91a-e70d75e132d0)
-![ss compo 2](https://github.com/user-attachments/assets/a76cce70-c368-40e4-8b2d-38f0daf02290)
-![ss compo 3](https://github.com/user-attachments/assets/c072f5bd-a9c8-4c6e-884e-1ff89599c259)
+![SS COMPOSITE 1](https://github.com/user-attachments/assets/d45042fa-393a-4bfb-b31e-8661df703d5b)
+![SS COMPOSITE 2](https://github.com/user-attachments/assets/c9bb95cd-2c24-4753-98ed-51d182b9f543)
+![SS COMPOSITE 3](https://github.com/user-attachments/assets/d5592a81-c1ac-44f8-9caa-d4800f27e9f5)
+![SS COMPOSITE 4](https://github.com/user-attachments/assets/7cef0f3f-c96c-402d-b7a9-5172b24fe1ed)
 
 
 ---
