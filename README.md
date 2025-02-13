@@ -1,4 +1,4 @@
-# DesignPattern
+![class diagram chain drawio](https://github.com/user-attachments/assets/27a30d51-6e78-4179-9a52-40859ae35fae)# DesignPattern
 ---
 
 ## 📄 Laporan 
@@ -116,7 +116,7 @@ Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasik
 
 
 ## Class Diagram
-![class composite drawio](https://github.com/user-attachments/assets/b808ab04-3a09-4354-8e6d-290c8d383b1e)
+![class diagram composite drawio](https://github.com/user-attachments/assets/ca815b72-651b-4bea-8b51-1e7d0d575fb8)
 
 Composite Design Pattern, yang digunakan untuk menangani struktur hierarki dengan komponen yang dapat berupa individu (leaf) atau kumpulan objek (composite).
 
@@ -203,7 +203,8 @@ Chain of Responsibility Design Pattern, yaitu pola desain yang memungkinkan sera
 
 
 ## Class Diagram
-![class chain drawio](https://github.com/user-attachments/assets/fbb74316-6cfa-4d21-9097-a6cea192a1fd)
+![class diagram chain drawio](https://github.com/user-attachments/assets/4acedd97-710b-4d90-bfff-17bdbbeb7915)
+
 
 implementasi Chain of Responsibility Design Pattern, yang digunakan untuk menangani permintaan secara berantai sampai salah satu handler menanganinya.
 
