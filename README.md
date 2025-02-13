@@ -140,23 +140,35 @@ Lihat semua Item : Admin dapat menampilkan daftar item yang tersedia di dalam si
 ## Sequence Diagram
 ![sequence composite drawio (1)](https://github.com/user-attachments/assets/2cac363e-fc6f-4039-b270-330b0b38603a)
 
-Menambahkan Properti (Item) ke dalam Toko
-- Admin memilih "Tambah Properti"
-- Toko memanggil add_item(), yang menambahkan item baru ke dalam daftar.
-- Instance baru dari Buku/Majalah/Koran dibuat dan disimpan.
+Tambah Item
+- User memilih opsi "Tambah Produk"
+- Sistem meminta input kategori, nama, penulis/penerbit, dan harga produk
+- User memasukkan data yang diminta
+- Etalase memeriksa apakah kategori sudah ada
+- Jika kategori belum ada, maka sistem membuat kategori baru
+- Produk ditambahkan ke dalam kategori yang sesuai
+- Sistem menampilkan detail produk yang baru ditambahkan
+- Sistem mengembalikan detail produk ke Etalase
+- Sistem mengembalikan status sukses
+- Sistem menampilkan konfirmasi bahwa produk berhasil ditambahkan kepada User
 
-Menampilkan Semua Item
-- Admin memilih "Lihat Semua Item"
-- Toko memanggil display_info() pada setiap item dalam daftar
-- Setiap item menjalankan display_info() untuk menampilkan informasi
+Lihat Semua Produk
+- User memilih opsi "Lihat Semua Produk"
+- Etalase meminta daftar produk berdasarkan kategori
+- Etalase meminta detail dari setiap produk
+- Produk mengembalikan detailnya ke Category
+- Category mengembalikan daftar produk ke Etalase
+- Sistem menampilkan daftar produk kepada User
 
-Menghapus Item
-- Admin memilih "Hapus Item"
-- Toko memanggil remove_item(), yang menghapus item dari koleksi.
-
-Keluar dari Program
-- Admin memilih "Keluar"
-- Sistem menutup program
+Hapus Produk
+- User memilih opsi "Hapus Produk"
+- Sistem meminta User memasukkan nama produk yang ingin dihapus
+- User menginput nama produk yang akan dihapus
+- Etalase meminta Category untuk menghapus produk
+- Category memeriksa apakah produk ada
+- Jika produk ada, produk dihapus dari kategori
+- Sistem mengembalikan status penghapusan
+- Sistem menampilkan konfirmasi bahwa produk telah berhasil dihapus
 
 
 ## CLI
@@ -218,29 +230,31 @@ Lihat semua Item : Admin dapat menampilkan daftar item yang tersedia di dalam si
 ## Sequence Diagram
 ![sequence chain drawio](https://github.com/user-attachments/assets/0a1d703e-2c9a-4348-9f5b-e856834f5310)
 
-Menambahkan Properti (Item) ke dalam Toko
-- Admin memilih "Tambah Properti"
-- TokoManager memanggil handle_request() pada Handler Chain
-- Handler Chain mengecek urutan handler:
-   - Cek handler Buku
-   - Cek handler Majalah
-   - Cek handler Koran
-Jika ditemukan handler yang sesuai, instance item dibuat
+Tambah Produk
+- User memilih opsi "Tambah Produk"
+- Etalase meminta User untuk menginput atribut produk
+- User memasukkan atribut produk (misalnya, nama, kategori, harga, dll.)
+- Etalase meneruskan request ke Handler
+- Handler membuat objek item berdasarkan input yang diterima
+- Handler mengembalikan objek item yang telah dibuat ke Etalase
+- Etalase memberikan konfirmasi bahwa item berhasil ditambahkan
 
-Menampilkan Semua Item
-- Admin memilih "Lihat Semua Item"
-- TokoManager memanggil display_all_items()
-- Setiap item dalam daftar menjalankan display_info()
-- Informasi item ditampilkan ke Admin
+Hapus Item
+- User memilih opsi "Hapus Item"
+- Etalase meminta input judul item yang ingin dihapus
+- User memasukkan judul item
+- Etalase meminta Handler untuk mencari item berdasarkan judul
+- Handler mencari item yang sesuai dan menghapusnya
+- Handler mengembalikan hasil pencarian ke Etalase
+- Item dihapus dari daftar
+- Etalase memberikan konfirmasi bahwa item berhasil dihapus
 
-Menghapus Item
-- Admin memilih "Hapus Item"
-- TokoManager memanggil delete_item()
-- Item yang sesuai dihapus dari daftar toko
-
-Keluar dari Program
-- Admin memilih "Keluar"
-- Sistem menutup program
+Lihat Semua Item
+- User memilih opsi "Lihat Semua Item"
+- Etalase mengambil semua item dalam daftar
+- Etalase meminta informasi dari Handler untuk setiap item
+- Handler mengembalikan informasi item yang diminta
+- Etalase menampilkan daftar semua item kepada User
 
 ## CLI
 ![ss chain](https://github.com/user-attachments/assets/37b92b31-f76f-4b94-9047-f0dcfb8b380a)
