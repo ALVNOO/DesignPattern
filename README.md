@@ -261,4 +261,8 @@ Lihat Semua Item
 - Etalase menampilkan daftar semua item kepada User
 
 ## CLI
-![ss chain](https://github.com/user-attachments/assets/37b92b31-f76f-4b94-9047-f0dcfb8b380a)
+![SS CHAIN 1](https://github.com/user-attachments/assets/18947b81-0411-4e58-bfe8-3ce9eb09317f)
+![SS CHAIN 2](https://github.com/user-attachments/assets/713fd6cf-af70-427f-8814-8a09a98e9fc8)
+![SS CHAIN 3](https://github.com/user-attachments/assets/0cadae77-958a-44a7-afbf-f87414b7110f)
+![SS CHAIN 4](https://github.com/user-attachments/assets/d985b6db-3831-4c6d-9b16-c88bec66a972)
+
