@@ -43,10 +43,9 @@ Buku, Majalah, Koran → Subclass dari PublicationPrototype dengan atribut khusu
 ## Use Case Diagram
 ![usecase prototype](https://github.com/user-attachments/assets/eb1ca001-0177-45b3-86af-f701588586b8)
 
-- Tambah Prototype : Admin dapat menambahkan prototype baru ke dalam sistem.
-- Tambah Item dari Prototype : Admin dapat membuat item baru berdasarkan prototype yang sudah ada.
-- Hapus Item : Admin dapat menghapus item tertentu dari sistem.
-- Keluar Program : Admin dapat keluar dari sistem atau mengakhiri program.
+- Tambah Produk : Admin dapat menambahkan prototype baru ke dalam sistem.
+- Hapus Produk : Admin dapat membuat item baru berdasarkan prototype yang sudah ada.
+- Lihat semua produk : Admin dapat menghapus item tertentu dari sistem.
 
 
 ## Sequence Diagram
@@ -127,10 +126,9 @@ Composite Design Pattern, yang digunakan untuk menangani struktur hierarki denga
 
 Use case diagram di atas menggambarkan interaksi antara aktor Admin dengan sistem yang memiliki empat fungsi utama, yaitu:
 
-Tambah Item : Admin dapat menambahkan item baru ke dalam sistem.
-Delete Item : Admin memiliki akses untuk menghapus item yang sudah ada dalam sistem.
-Display Item : Admin dapat menampilkan daftar item yang tersedia di dalam sistem.
-Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplikasi.
+Tambah Item : Admin dapat menambahkan item baru ke dalam sistem
+Hapus Item : Admin memiliki akses untuk menghapus item yang sudah ada dalam sistem
+Lihat semua Item : Admin dapat menampilkan daftar item yang tersedia di dalam sistem
 
 
 ## Sequence Diagram
@@ -207,9 +205,8 @@ implementasi Chain of Responsibility Design Pattern, yang digunakan untuk menang
 Use case diagram di atas menggambarkan interaksi antara aktor Admin dengan sistem yang memiliki empat fungsi utama, yaitu:
 
 Tambah Item : Admin dapat menambahkan item baru ke dalam sistem.
-Delete Item : Admin memiliki akses untuk menghapus item yang sudah ada dalam sistem.
-Display Item : Admin dapat menampilkan daftar item yang tersedia di dalam sistem.
-Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplikasi.
+Hapus Item : Admin memiliki akses untuk menghapus item yang sudah ada dalam sistem.
+Lihat semua Item : Admin dapat menampilkan daftar item yang tersedia di dalam sistem.
 
 
 ## Sequence Diagram
