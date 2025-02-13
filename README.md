@@ -205,7 +205,7 @@ Keluar Program : Admin memiliki opsi untuk keluar dari sistem atau menutup aplik
 
 
 ## Sequence Diagram
-![seq chain](https://github.com/user-attachments/assets/e4e82744-ad88-4bc9-bd87-c308cb2fbcfa)
+![sequence chain](https://github.com/user-attachments/assets/79781979-8644-4e58-8bcd-814025a924f3)
 
 Menambahkan Properti (Item) ke dalam Toko
 - Admin memilih "Tambah Properti"
