@@ -15,18 +15,20 @@ Prototype Design Pattern yaitu pola desain yang digunakan untuk membuat objek ba
 Berikut adalah penjelasan setiap komponennya:
 
 ### Prototype (Interface/Abstract Class)
-- Merupakan antarmuka atau kelas abstrak yang mendefinisikan metode Clone().
-- Memastikan bahwa semua kelas turunan (konkrit) memiliki kemampuan untuk mengkloning dirinya sendiri.
+Prototype (Abstract Class)
+- Ini adalah kelas abstrak yang mendefinisikan metode Clone().
+- Metode Clone() berfungsi untuk menyalin objek tanpa bergantung pada kelas konkret.
 
 ### ConcretePrototype (Kelas Konkret yang Mengimplementasi Prototype)
-- Menyimpan state (data yang akan disalin).
-- Mengimplementasikan metode Clone(), yang berisi logika bagaimana objek akan diduplikasi.
-- Metode Clone() akan mengembalikan salinan baru dari objek itu sendiri.
+- Implementasi dari kelas Prototype.
+- Menyimpan state atau data yang akan disalin saat objek diduplikasi.
+- Mengimplementasikan metode Clone() yang benar-benar menyalin objek.
 
 
-### Client (Pengguna)
-- Memanggil metode Clone() untuk membuat objek baru berdasarkan objek yang sudah ada.
-- Dengan cara ini, pengguna tidak perlu tahu bagaimana objek dibuat atau dari kelas konkret mana objek itu berasal.
+### PrototypeRegistry
+- Merupakan registry (daftar) yang menyimpan berbagai prototipe dalam sebuah map (key-value pair).
+- Memungkinkan pengambilan objek prototipe berdasarkan kunci (key) dengan metode getPrototype(key: String).
+- Tujuannya adalah mempermudah akses ke prototipe yang telah dibuat sebelumnya tanpa perlu menginstansiasi ulang.
 
 
 ## Class Diagram
