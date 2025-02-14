@@ -187,15 +187,15 @@ Hapus Produk
 Chain of Responsibility Design Pattern, yaitu pola desain yang memungkinkan serangkaian objek (handlers) untuk menangani permintaan secara berantai sampai salah satu objek menangani permintaan tersebut.
 
 ### Handler (Interface/Kelas Abstrak)
-Merupakan kelas abstrak atau antarmuka yang mendefinisikan struktur dasar handler dalam rantai.
-Memiliki atribut next: Handler, yang merupakan referensi ke handler berikutnya dalam rantai.
-Memiliki metode setNext() untuk mengatur handler berikutnya.
-Memiliki metode handleRequest(), yang akan diimplementasikan oleh subclass.
+- Merupakan kelas antarmuka yang mendefinisikan struktur dasar handler dalam rantai.
+- Memiliki atribut next: Handler, yang merupakan referensi ke handler berikutnya dalam rantai.
+- Memiliki metode setNext() untuk mengatur handler berikutnya.
+- Memiliki metode handleRequest(), yang akan diimplementasikan oleh subclass.
 
 ### ConcreteHandlerA, ConcreteHandlerB, ConcreteHandlerC (Handler Konkret)
-ConcreteHandlerA dan ConcreteHandlerB adalah implementasi spesifik dari Handler.
-Masing-masing memiliki metode handleRequest(), yang dapat menangani permintaan atau meneruskan ke handler berikutnya dalam rantai.
-Jika HandlerA tidak menangani permintaan, maka akan diteruskan ke HandlerB, dan seterusnya hingga permintaan diproses atau tidak ada lagi handler yang dapat menangani.
+- ConcreteHandlerA dan ConcreteHandlerB adalah implementasi spesifik dari Handler.
+- Masing-masing memiliki metode handleRequest(), yang dapat menangani permintaan atau meneruskan ke handler berikutnya dalam rantai.
+- Jika HandlerA tidak menangani permintaan, maka akan diteruskan ke HandlerB, dan seterusnya hingga permintaan diproses atau tidak ada lagi handler yang dapat menangani.
 
 
 ## Class Diagram
