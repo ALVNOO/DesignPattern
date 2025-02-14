@@ -101,22 +101,19 @@ Alur:
 Composite Design Pattern, yaitu pola desain yang digunakan untuk merepresentasikan struktur hierarki (seperti pohon) dengan objek individual (Leaf) dan objek yang dapat memiliki anak (Composite).
 
 ### Component (Antarmuka/Kelas Abstrak)
-- Menyediakan antarmuka umum untuk semua objek dalam struktur hierarki.
-- Digunakan baik oleh objek Leaf maupun Composite, sehingga keduanya bisa diperlakukan dengan cara yang sama oleh Client.
+- Menjadi dasar bagi semua elemen dalam hierarki.
+- Memiliki metode abstrak doThis(), yang harus diimplementasikan oleh semua subclass.
+- Memungkinkan penggunaan polimorfisme untuk menangani Leaf dan Composite secara seragam.
 
 ### Leaf (Objek Tunggal)
-- Implementasi metode operation() yang bersifat spesifik.
-- Biasanya merupakan unit terkecil dalam hierarki.
+- Objek konkret yang tidak memiliki child.
+- Mengimplementasikan metode doThis() secara spesifik.
 
 ### Composite (Objek yang Dapat Memiliki Child)
-- Menyimpan daftar objek anak dalam children: List<Component>.
-- Menyediakan metode add(Component) untuk menambahkan objek anak.
-- Menyediakan metode remove(Component) untuk menghapus objek anak.
-- Mengimplementasikan operation(), yang akan menjalankan operation() pada semua child-nya secara rekursif.
-
-### Client
-- Memanggil operation() tanpa harus tahu apakah objek yang digunakan adalah Leaf atau Composite.
-- Memperlakukan struktur hierarki dengan cara yang sama, baik untuk elemen tunggal maupun grup.
+- Dapat menyimpan beberapa Component (baik Leaf maupun Composite lainnya).
+- Memiliki daftar elemen (elements: List<Component>), yang dapat berupa Leaf atau Composite lainnya.
+- Memungkinkan penambahan elemen dengan addElement(Component).
+- Mengimplementasikan doThis() dengan cara yang dapat mempengaruhi semua elemen yang dikandungnya.
 
 
 ## Class Diagram
@@ -190,21 +187,15 @@ Hapus Produk
 Chain of Responsibility Design Pattern, yaitu pola desain yang memungkinkan serangkaian objek (handlers) untuk menangani permintaan secara berantai sampai salah satu objek menangani permintaan tersebut.
 
 ### Handler (Interface/Kelas Abstrak)
-- Menyediakan metode setNext() untuk mengatur handler berikutnya dalam rantai.
-- Menyediakan metode handleRequest(), yang akan menangani permintaan atau meneruskannya ke handler berikutnya.
-- Menyimpan referensi ke handler berikutnya dalam variabel next.
+Merupakan kelas abstrak atau antarmuka yang mendefinisikan struktur dasar handler dalam rantai.
+Memiliki atribut next: Handler, yang merupakan referensi ke handler berikutnya dalam rantai.
+Memiliki metode setNext() untuk mengatur handler berikutnya.
+Memiliki metode handleRequest(), yang akan diimplementasikan oleh subclass.
 
 ### ConcreteHandlerA, ConcreteHandlerB, ConcreteHandlerC (Handler Konkret)
-- Setiap ConcreteHandler memiliki implementasi spesifik dari handleRequest().
-- Jika handler saat ini dapat menangani permintaan, maka akan diproses.
-- Jika tidak, permintaan akan diteruskan ke handler berikutnya dalam rantai.
-- ConcreteHandlerA → Handler pertama dalam rantai.
-- ConcreteHandlerB → Handler kedua dalam rantai.
-- ConcreteHandlerC → Handler ketiga dalam rantai.
-
-### Client
-- Membuat objek ConcreteHandler dan menyusun urutan rantai dengan setNext().
-- Memanggil handleRequest() pada handler pertama, yang kemudian akan diproses atau diteruskan ke handler berikutnya.
+ConcreteHandlerA dan ConcreteHandlerB adalah implementasi spesifik dari Handler.
+Masing-masing memiliki metode handleRequest(), yang dapat menangani permintaan atau meneruskan ke handler berikutnya dalam rantai.
+Jika HandlerA tidak menangani permintaan, maka akan diteruskan ke HandlerB, dan seterusnya hingga permintaan diproses atau tidak ada lagi handler yang dapat menangani.
 
 
 ## Class Diagram
